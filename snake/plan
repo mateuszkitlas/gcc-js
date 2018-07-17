@@ -1,0 +1,48 @@
+6. coraz dokładniejsza fiunkcja f
+-start x end
+-left x top y
+-left x px top y px
+- mnożenie przez 100
+- mnożenie 1000-y // bo chcemy od dołu
+7. PAWEŁ
+ może jakieć ciekawsze zadania na ify
+8. piotrek: setInterval grube w chuj tajmer
+              -- że można przyśpieszyc zmieiniając interval
+9. piotrek: jabłko
+  - fun_jabłko() fun_kropek()
+  - fun_usun_jablko()
+  - fun_losowe_jablko() {
+      fun_jablko(random.number % 10, random % 10)
+    }
+  - 
+10. 
+  - fun_wunż_jedzie_do_przodu() // nu kurwa zajebiste
+  - if wywala za ściane
+  pyton atakauje mazowsze
+  pyton atakuje JAVASCRIPT // COMIC SANS  
+10. 
+  - wąż jak lista  - podmianiamy powrotem "list: px ; top px"
+  - fot lista
+  - wąż jak lista par (int, int)
+  - for lista par
+    1. po kolei wszystko rufuj(list[1]) rysuj(list[2])
+    2. for lista: rysuj x
+  - doklejamy głowę z przodu
+  - kasowanie tyłu
+  - doklejamy głowe z każdej strony
+  - 
+  - jak wywala/wyjeżdża za ściane
+  - kierunek = !kierunek
+  -   zadanie żeby w pętli chodził do góry w w prawo
+  - drugie wjebywanie sie w ściane po posi Y
+  - łapanie klawisza {
+      a) najpierw onKeyDown
+      b) później ostatni klawisz wciśnięty
+  - przechodzenie przez krawędzie
+  - if jabłko==łeb
+      nie skracaj ogona
+  - nie wpierdalaj sie na samego siebie FOR
+      1
+
+
+  - 
