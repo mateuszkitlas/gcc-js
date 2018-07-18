@@ -1,3 +1,5 @@
+
+MATEUSZ: wstęp i pisanie pierwszego kodu używając intuicji i modyfikując przykłady
 1. wstęp
 2. hello world
 3. zmienne
@@ -10,22 +12,35 @@
   -left x px top y px
   - mnożenie przez 100
   - mnożenie 1000-y // bo chcemy od dołu
-7. PAWEŁ
- może jakieć ciekawsze zadania na ify
-8. piotrek: setInterval
+rozdzielenie na trzy pliki:L html, css i js
+7. ify
+  - jakieś ciekawe zadania na ify niekoniecznie do samego snejka
+
+PAWEŁ: opis syntaktyki języka i próby pisania kodu bez po prostu przerabiania przykładu (bo została pokazana porządnie składnia)
+8. dokładne omówienie syntaktyki języka:
+  zmienne, operacje na zmiennych, typy danych, funkcje
+  - można przejść przez to, co już napisaliśmy i omawiać to jako jeden z przykładów
+    - bo jest jakaś funkcja f
+    - na początku x był stringiem (przekazywaliśmy "left: 100px; top: 100px")
+    - później x był intem (robiliśmy niejawne rzutowanie na string "left: " + x + "px; top: " + y + "px; ")
+    - na końcu też był intem, ale traktowaliśmy go jako int (mnożylismy przez 100), a dopiero póxniej rzutpowalismy na string
+    - jest juz po pierwszych zadaniach na samego ifa (podunkt 7), więc jego syntaktyke tez można omówić
+9. setInterval (już wiemy co to jest funkcja, więc wchodzimy krok wyżej - przekazujemy ją jako argument)
+  - wąż porusza się sam
   - można przyśpieszyc zmieiniając interval
-9. piotrek: jabłko
+10. jabłko
   - fun_jabłko() fun_kropek()
   - fun_usun_jablko()
   - fun_prompt_jablko() // używamy prompta
   - fun_losowe_jablko() { // używamy random
       fun_jablko(random.number % 10, random % 10)
     }
-  - 
-10. 
+
+PIOTREK: listy i pętle oraz dalsze rzeźbienie projektu, 
+11.
   - fun_wunż_jedzie_do_przodu()
   - if wywala za ściane
-11.
+12.
   - wąż jak lista  - podmianiamy powrotem "list: px ; top px"
   - for lista
   - wąż jak lista par (int, int)
@@ -35,7 +50,7 @@
   - doklejamy głowę z przodu
   - kasowanie tyłu
   - doklejamy głowe z każdej strony
-12.
+13.
   - jak wywala/wyjeżdża za ściane
   - kierunek = !kierunek
   -   zadanie żeby w pętli chodził do góry w w prawo

@@ -22,12 +22,12 @@
       var end = "}></div>"
 
       function f(x, y) {
-        return  start "left: " + x + "top:" y + end
+        return start "left: " + x + "px;" + "top:" y + "px;" + end
       }
-      document.getElementById("plansza").innerHTML = f("100px", "100px")
-      document.getElementById("plansza").innerHTML = f("left: 200px; top: 100px")
-      document.getElementById("plansza").innerHTML = f("left: 200px; top: 200px")
-      document.getElementById("plansza").innerHTML = f("left: 200px; top: 300px")
+      document.getElementById("plansza").innerHTML = f(100, 100)
+      document.getElementById("plansza").innerHTML = f(200, 100)
+      document.getElementById("plansza").innerHTML = f(200, 200)
+      document.getElementById("plansza").innerHTML = f(200, 300)
 
     </script>
   </body>

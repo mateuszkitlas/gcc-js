@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <style>
+      #plansza {
+        background-color: #0A0;
+        width: 1000px;
+        height: 1000px;
+      }
+      .kropek {
+        background-color: #CC0;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id=plansza>
+    </div>
+    <script>
+      var start = "<div class=kropek style={"
+      var end = "}></div>"
+
+      function f(x, y) {
+        return  start "left: " + x + "top:" y + end
+      }
+      document.getElementById("plansza").innerHTML = f("100px", "100px")
+      document.getElementById("plansza").innerHTML = f("200px", "100px")
+      document.getElementById("plansza").innerHTML = f("200px", "200px")
+      document.getElementById("plansza").innerHTML = f("200px", "300px")
+
+    </script>
+  </body>
+</html>
