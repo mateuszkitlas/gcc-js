@@ -39,7 +39,7 @@
   - jak wywala/wyjeżdża za ściane
   - kierunek = !kierunek
   -   zadanie żeby w pętli chodził do góry w w prawo
-  - drugie wjebywanie sie w ściane po posi Y
+  - drugie włażenie na ściane po osi Y
   - łapanie klawisza {
       a) najpierw onKeyDown
       b) później ostatni klawisz wciśnięty
