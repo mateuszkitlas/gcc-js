@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <style>
+      div {
+        padding: 20px 20px 20px 20px;
+      }
+      #A {
+        background-color: green;
+      }
+
+      #B {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id=A>Ala ma kota</div>
+    <div id=B>Bernard ma mysz</div>
+    <script>
+      document.onclick = function(){
+        var x = document.getElementById("A").innerHTML;
+        document.getElementById("A").innerHTML = document.getElementById("B").innerHTML;
+        document.getElementById("B").innerHTML = x;
+      }
+    </script>
+  </body>
+</html>
