@@ -1,4 +1,3 @@
-
 MATEUSZ: wstęp i pisanie pierwszego kodu używając intuicji i modyfikując przykłady
 1. wstęp
 2. hello world
@@ -25,10 +24,7 @@ PAWEŁ: opis syntaktyki języka i próby pisania kodu bez po prostu przerabiania
     - później x był intem (robiliśmy niejawne rzutowanie na string "left: " + x + "px; top: " + y + "px; ")
     - na końcu też był intem, ale traktowaliśmy go jako int (mnożylismy przez 100), a dopiero póxniej rzutpowalismy na string
     - jest juz po pierwszych zadaniach na samego ifa (podunkt 7), więc jego syntaktyke tez można omówić
-9. setInterval (już wiemy co to jest funkcja, więc wchodzimy krok wyżej - przekazujemy ją jako argument)
-  - wąż porusza się sam
-  - można przyśpieszyc zmieiniając interval
-10. jabłko
+9. jabłko
   - fun_jabłko() fun_kropek()
   - fun_usun_jablko()
   - fun_prompt_jablko() // używamy prompta
@@ -37,6 +33,9 @@ PAWEŁ: opis syntaktyki języka i próby pisania kodu bez po prostu przerabiania
     }
 
 PIOTREK: listy i pętle oraz dalsze rzeźbienie projektu, 
+10. setInterval (już wiemy co to jest funkcja, więc wchodzimy krok wyżej - przekazujemy ją jako argument)
+  - wąż porusza się sam
+  - można przyśpieszyc zmieiniając interval
 11.
   - fun_wunż_jedzie_do_przodu()
   - if wywala za ściane
