@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <style>
+      #plansza {
+        background-color: #0A0;
+        width: 1000px;
+        height: 1000px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+      }
+      .ogon {
+        background-color: #CC0;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+      }
+      .jablko {
+        background-color: red;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id=plansza>
+    </div>
+    <script>
+      function ogon(x, y) {
+        var start = "<div class=ogon style=\""
+        var end = "\"></div>"
+        var calculated_x = (x - 1) * 100
+        var calculated_y = 1000 - y * 100
+        return start + "left: " + calculated_x + "px;" + "top:" + calculated_y + "px;" + end
+      };
+      
+      function jablko(x, y) {
+        var start = "<div class=jablko style=\""
+        var end = "\"></div>"
+        var calculated_x = (x - 1) * 100
+        var calculated_y = 1000 - y * 100
+        return start + "left: " + calculated_x + "px;" + "top:" + calculated_y + "px;" + end
+      };
+
+      document.getElementById("plansza").innerHTML = ogon(1, 1);
+      document.getElementById("plansza").innerHTML += ogon(2, 1);
+      document.getElementById("plansza").innerHTML += ogon(3, 1);
+      document.getElementById("plansza").innerHTML += ogon(4, 1);
+      document.getElementById("plansza").innerHTML += ogon(4, 2);
+      document.getElementById("plansza").innerHTML += jablko(4, 5);
+    </script>
+  </body>
+</html>
