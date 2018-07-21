@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <style>
+      #plansza {
+        background-color: #0A0;
+        width: 1000px;
+        height: 1000px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+      }
+      .kropek {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id=plansza>
+    </div>
+    
+    <script>
+      // tu dodaj zmienne jablko_x i jablko_y ktore wczytaja pozycje jablka za pomoca prompt()
+
+      function kropek(x, y, kolor) {
+        var start = "<div class=kropek style=\""
+        var end = "\"></div>"
+        var calculated_x = x * 100
+        var calculated_y = y * 100
+        return start + "left: " + calculated_x + "px;" 
+               + "top:" + calculated_y + "px;"
+               + "background-color:" + kolor + ";" 
+               + end
+      };
+      
+      function ogon(x, y) {
+        return kropek(x, y, "#CC0");
+      }
+
+      function jablko(x, y) {
+        return kropek(x, y, "red");
+      };
+
+      document.getElementById("plansza").innerHTML = ogon(1, 1);
+      document.getElementById("plansza").innerHTML += ogon(2, 1);
+      document.getElementById("plansza").innerHTML += ogon(3, 1);
+      document.getElementById("plansza").innerHTML += ogon(4, 1);
+      document.getElementById("plansza").innerHTML += ogon(4, 2);
+      document.getElementById("plansza").innerHTML += jablko(4, 5);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <style>
+      #plansza {
+        background-color: #0A0;
+        width: 1000px;
+        height: 1000px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+      }
+      .kropek {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id=plansza>
+    </div>
+    
+    <script>
+      // przerob funkcje ogon na funkcje function kropek(x, y, kolor) ktora rysuje punkt danego koloru
+      function ogon(x, y) {
+        var start = "<div class=ogon style=\""
+        var end = "\"></div>"
+        var calculated_x = x * 100
+        var calculated_y = y * 100
+        return start + "left: " + calculated_x + "px;" + "top:" + calculated_y + "px;" + end
+      };
+      
+      //napisz funkcje ogon(x,y) i jablko (x,y) wykorzystujace funkcje kropek() tak zeby ponizszy kod dzialal
+
+      // document.getElementById("plansza").innerHTML = ogon(1, 1);
+      // document.getElementById("plansza").innerHTML += ogon(2, 1);
+      // document.getElementById("plansza").innerHTML += ogon(3, 1);
+      // document.getElementById("plansza").innerHTML += ogon(4, 1);
+      // document.getElementById("plansza").innerHTML += ogon(4, 2);
+      // document.getElementById("plansza").innerHTML += jablko(4, 5);
+    </script>
+  
+  </body>
+</html>
