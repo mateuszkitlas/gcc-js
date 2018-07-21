@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <style>
+      #plansza {
+        background-color: #0A0;
+        width: 1000px;
+        height: 1000px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+      }
+      .kropek {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id=plansza>
+    </div>
+    
+    <script>
+      var jablko_x = undefined;
+      var jablko_y = undefined;
+      var waz_x = 0;
+      var waz_y = 0;
+
+      function kropek(x, y, kolor) {
+        var start = "<div class=kropek style=\""
+        var end = "\"></div>"
+        var calculated_x = x * 100
+        var calculated_y = y * 100
+        return start + "left: " + calculated_x + "px;" 
+               + "top:" + calculated_y + "px;"
+               + "background-color:" + kolor + ";" 
+               + end
+      };
+      
+      function ogon(x, y) {
+        return kropek(x, y, "#CC0");
+      }
+
+      function jablko(x, y) {
+        return kropek(x, y, "#FF5733");
+      };
+
+      function losuj_jablko() {
+        jablko_x = Math.floor(Math.random() * 10);
+        jablko_y = Math.floor(Math.random() * 10);
+      }
+
+      setInterval(function(){ 
+        losuj_jablko();
+
+        var stan_gry = "";
+        stan_gry += jablko(jablko_x, jablko_y);
+        stan_gry += ogon(waz_x, waz_y);
+
+        waz_x += 1;
+
+        document.getElementById("plansza").innerHTML = stan_gry;
+      }, 1000);
+
+    </script>
+  </body>
+</html>
