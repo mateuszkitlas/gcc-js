@@ -18,16 +18,16 @@
     <div id=plansza>
     </div>
     <script>
-      var start = "<div class=kropek style={"
-      var end = "}></div>"
+      var start = "<div class=kropek style='"
+      var end = "'></div>"
 
       function f(x, y) {
-        return start "left: " + x + "px;" + "top:" y + "px;" + end
+        return start + "left: " + x + "px;" + "top:" + y + "px" + end
       }
       document.getElementById("plansza").innerHTML = f(100, 100)
-      document.getElementById("plansza").innerHTML = f(200, 100)
-      document.getElementById("plansza").innerHTML = f(200, 200)
-      document.getElementById("plansza").innerHTML = f(200, 300)
+      document.getElementById("plansza").innerHTML += f(200, 100)
+      document.getElementById("plansza").innerHTML += f(200, 200)
+      document.getElementById("plansza").innerHTML += f(200, 300)
 
     </script>
   </body>

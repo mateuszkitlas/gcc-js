@@ -18,18 +18,18 @@
     <div id=plansza>
     </div>
     <script>
-      var start = "<div class=kropek style={"
-      var end = "}></div>"
+      var start = "<div class=kropek style='"
+      var end = "'></div>"
 
       function f(x, y) {
         var calculated_x = x * 100
         var calculated_y = y * 100
-        return start "left: " + calculated_x + "px;" + "top:" calculated_y + "px;" + end
+        return start + "left: " + calculated_x + "px;" + "top:" + calculated_y + "px;" + end
       }
       document.getElementById("plansza").innerHTML = f(1, 1)
-      document.getElementById("plansza").innerHTML = f(2, 1)
-      document.getElementById("plansza").innerHTML = f(2, 2)
-      document.getElementById("plansza").innerHTML = f(2, 3)
+      document.getElementById("plansza").innerHTML += f(2, 1)
+      document.getElementById("plansza").innerHTML += f(2, 2)
+      document.getElementById("plansza").innerHTML += f(2, 3)
 
     </script>
   </body>

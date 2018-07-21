@@ -38,9 +38,7 @@
       <li><a href=wstep/wstep.html>Wstęp</a></li>
       <li>
         <a href=hello_world/hello_world.html>Hello World</a>
-        <ul>
-          <li>Ćwiczenie 1:
-            <ol>
+        <ol>
               <li>
                 Stwórz trzy puste znaczniki <pre>&ltdiv&gt</pre> z następującymi id:
                 <pre>czerwony</pre>, <pre>zielony</pre>, <pre>niebieski</pre>
@@ -50,11 +48,9 @@
                 <pre>"ala ma kota"</pre> oraz odpowiednim kolorem.
                 <a href="hello_world/solution1.html">Rowiązanie</a>
               </li>
-            </ol>
-          </li>
-        </ul>
+        </ol>
       <li>
-        <a href=zmienne/zmienne.html>Zmienne</a>
+        Zmienne
         <ol>
           <li>
             Zrób to samo używając instrukcji <pre>var tekst = "ala ma kota";</pre> 
@@ -85,6 +81,45 @@
             zamiast HTMLu. Przerób ten plik tak, aby wąż znów miał długość 4 i 
             znajdowal się na pozycjach (1,1), (2,1), (2,2), (2,3) - tym razem za pomocą JavaScriptu.
             <a href=snake/mateusz/4.html>Rozwiązanie</a></li>
+          <li> W zamieszczonym <a href=snake/mateusz/5-zadanie.html>pliku</a>
+            znajduje się szkielet mniej redundantnej wersji tego,
+            co stworzono już do tej pory. Uzupełnij zmienne <pre>start</pre> oraz <pre>end</pre>.
+            <a href=snake/mateusz/5.html>Rozwiązanie</a></li>
+          <li> W poprzednim rozwiązaniu za każdym razem wywoływaliśmy ten sam
+            pattern <pre>start + x + end</pre>. W zamieszczonym
+            <a href=snake/mateusz/6.html>pliku</a> jest zalążek jeszcze bardziej skróconej
+            wersji. Stworzyliśmy funckję, którą można wywołać kilka razy.
+            Dorysuj za jej pomocą resztę węża.
+            <a href=snake/mateusz/7.html>Rozwiązanie</a></li>
+          <li>Funkcja może brać dwa argumenty. Posługując się poniższym kodem:<br>
+            <pre style="display: block">
+
+    var start = "&ltdiv class=kropek style='"
+    var middle = ""
+    var end = "'&gt&lt/div&gt"
+    function f(x, y) {
+      return start + x + middle + y + end
+    }
+    document.getElementById("plansza").innerHTML = f("100px", "100px")
+            </pre>
+            Zmień <pre>var start</pre>, <pre>var middle</pre> i <pre>var end</pre>, tak
+            aby nowa funkcja <pre>f</pre> działała poprawnie.
+            <a href=snake/mateusz/8.html>Rozwiązanie</a></li>
+          <li>Popraw funkcję <pre>f</pre> tak, aby była wywoływana w następujący sposób:
+            <pre>document.getElementById("plansza").innerHTML = f(100, 100)</pre>
+            <a href=snake/mateusz/9.html>Rozwiązanie</a></li>
+          <li>Posługując się poniższym kodem:
+            <pre style="display: block">
+    function f(x, y) {
+      var calculated_x = x // tutaj dokonaj zmian
+      var calculated_y = y // tutaj dokonaj zmian
+      return start + "left: " + calculated_x + "px;" + "top:" + calculated_y + "px;" + end
+    }
+            </pre>
+            Popraw funkcję <pre>f</pre> tak, aby była wywoływana w następujący sposób:
+            <pre>document.getElementById("plansza").innerHTML = f(1, 1)</pre>
+            <a href=snake/mateusz/10.html>Rozwiązanie</a></li>
+
         </ol>
       </li>
     </ol>
