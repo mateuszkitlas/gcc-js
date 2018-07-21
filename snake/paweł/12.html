@@ -26,20 +26,21 @@
   <body>
     <div id=plansza>
     </div>
+    
     <script>
       function ogon(x, y) {
         var start = "<div class=ogon style=\""
         var end = "\"></div>"
-        var calculated_x = (x - 1) * 100
-        var calculated_y = 1000 - y * 100
+        var calculated_x = x * 100
+        var calculated_y = y * 100
         return start + "left: " + calculated_x + "px;" + "top:" + calculated_y + "px;" + end
       };
       
       function jablko(x, y) {
         var start = "<div class=jablko style=\""
         var end = "\"></div>"
-        var calculated_x = (x - 1) * 100
-        var calculated_y = 1000 - y * 100
+        var calculated_x = x * 100
+        var calculated_y = y * 100
         return start + "left: " + calculated_x + "px;" + "top:" + calculated_y + "px;" + end
       };
 
@@ -50,5 +51,6 @@
       document.getElementById("plansza").innerHTML += ogon(4, 2);
       document.getElementById("plansza").innerHTML += jablko(4, 5);
     </script>
+  
   </body>
 </html>
