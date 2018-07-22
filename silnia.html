@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <script>
+      function silnia(x){
+        if (x == 0)
+          return 1;
+        else return x * silnia(x-1);
+      }
+      var liczba = parseInt(prompt("podaj liczbe naturalna wieksza od 0"))
+      alert("silnia(" + liczba + ") = " + silnia(liczba))
+    </script>
+  </head>
+</html>
+
